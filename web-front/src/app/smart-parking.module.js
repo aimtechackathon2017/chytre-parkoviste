@@ -11,9 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
-// Imports for loading & configuring the in-memory web api
-var angular_in_memory_web_api_1 = require('angular-in-memory-web-api');
-var in_memory_data_service_1 = require('./in-memory-data.service');
 var smart_parking_component_1 = require('./smart-parking.component');
 var parking_lot_component_1 = require("./parking-lot.component");
 var SmartParkingModule = (function () {
@@ -23,8 +20,8 @@ var SmartParkingModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                http_1.HttpModule,
-                angular_in_memory_web_api_1.InMemoryWebApiModule.forRoot(in_memory_data_service_1.InMemoryDataService)],
+                http_1.HttpModule
+            ],
             declarations: [smart_parking_component_1.SmartParkingComponent, parking_lot_component_1.ParkingLotComponent],
             bootstrap: [smart_parking_component_1.SmartParkingComponent]
         }), 

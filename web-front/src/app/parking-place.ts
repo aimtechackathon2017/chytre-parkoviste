@@ -1,4 +1,4 @@
 export class ParkingPlace {
-    id: number;
-    occupied: boolean;
+    place_id: number;
+    available: boolean;
 }

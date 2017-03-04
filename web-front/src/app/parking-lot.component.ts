@@ -9,10 +9,10 @@ import { ParkingPlace } from './parking-place';
     selector: 'parking-lot',
     template: `<ul class="parking-places col-12">
                     <li *ngFor="let parkingPlace of parkingPlaces"
-                        [class.occupied]="parkingPlace.occupied"
+                        [class.occupied]="!parkingPlace.available"
                         class="parking-place">
-                         <div class="sign">{{parkingPlace.id}}</div>
-                         <div class="status">{{parkingPlace.occupied ? 'Occupied' : 'Free'}}</div>
+                         <div class="sign">{{parkingPlace.place_id}}</div>
+                         <div class="status">{{parkingPlace.available ? 'Free' : 'Occupied'}}</div>
                          <div class="parking-inside"></div>
                     </li>
                </ul>`,

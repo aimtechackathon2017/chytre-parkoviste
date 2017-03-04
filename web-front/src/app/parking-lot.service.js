@@ -15,7 +15,7 @@ require('rxjs/add/operator/toPromise');
 var ParkingLotService = (function () {
     function ParkingLotService(http) {
         this.http = http;
-        this.dataUrl = 'api/parkingPlaces';
+        this.dataUrl = 'https://7j62gv0mfg.execute-api.eu-west-1.amazonaws.com/hacking/place/';
     }
     ParkingLotService.prototype.getDataPeriodically = function () {
         var _this = this;
@@ -28,7 +28,12 @@ var ParkingLotService = (function () {
     ParkingLotService.prototype.getData = function () {
         return this.http.get(this.dataUrl)
             .toPromise()
-            .then(function (response) { return response.json().data; })
+            .then(function (response) {
+            console.log(response.json());
+            var data = response.json().body;
+            data.sort(function (a, b) { return a.place_id - b.place_id; });
+            data;
+        })
             .catch(this.handleError);
     };
     ParkingLotService.prototype.handleError = function (error) {

@@ -30,7 +30,7 @@ var ParkingLotComponent = (function () {
     ParkingLotComponent = __decorate([
         core_1.Component({
             selector: 'parking-lot',
-            template: "<ul class=\"parking-places col-12\">\n                    <li *ngFor=\"let parkingPlace of parkingPlaces\"\n                        [class.occupied]=\"parkingPlace.occupied\"\n                        class=\"parking-place\">\n                         <div class=\"sign\">{{parkingPlace.id}}</div>\n                         <div class=\"status\">{{parkingPlace.occupied ? 'Occupied' : 'Free'}}</div>\n                         <div class=\"parking-inside\"></div>\n                    </li>\n               </ul>",
+            template: "<ul class=\"parking-places col-12\">\n                    <li *ngFor=\"let parkingPlace of parkingPlaces\"\n                        [class.occupied]=\"!parkingPlace.available\"\n                        class=\"parking-place\">\n                         <div class=\"sign\">{{parkingPlace.place_id}}</div>\n                         <div class=\"status\">{{parkingPlace.available ? 'Free' : 'Occupied'}}</div>\n                         <div class=\"parking-inside\"></div>\n                    </li>\n               </ul>",
             providers: [parking_lot_service_1.ParkingLotService]
         }), 
         __metadata('design:paramtypes', [parking_lot_service_1.ParkingLotService])
