@@ -57,21 +57,21 @@ h1 {
     font-size: 26px;
   }
   .parking-places .parking-place {
-    width: 90px;
-    height: 150px;
+    width: 120px;
+    height: 200px;
   }
   .parking-places .parking-place .sign {
     width: 20px;
     height: 20px;
-    margin: 5px;
-    line-height: 20px;
+    margin: 10px;
+    line-height: 23px;
     font-size: 10px;
   }
   .parking-places .parking-place .status {
-    margin: 5px 5px 0 0;
+    margin: 10px 10px 0 0;
     font-size: 12px;
   }
   .parking-places .parking-place.occupied .parking-inside {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }

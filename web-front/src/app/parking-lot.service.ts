@@ -13,7 +13,7 @@ export class ParkingLotService {
 
     getDataPeriodically(): Observable<ParkingPlace[]> {
         return Observable
-            .interval(10000)
+            .interval(5000)
             .flatMap(() => {
                 return this.getData()
             });
@@ -23,10 +23,9 @@ export class ParkingLotService {
         return this.http.get(this.dataUrl)
             .toPromise()
             .then(response => {
-                console.log(response.json());
-                let data = response.json().body;
-                data.sort(function (a, b) { return a.place_id - b.place_id; });
-                data as ParkingPlace[]
+                let data = JSON.parse(response.json().body);
+                data.sort((a: any, b: any) => { return a.place_id - b.place_id; });
+                return data as ParkingPlace[]
                 }
             )
             .catch(this.handleError);

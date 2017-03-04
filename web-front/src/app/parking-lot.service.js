@@ -20,7 +20,7 @@ var ParkingLotService = (function () {
     ParkingLotService.prototype.getDataPeriodically = function () {
         var _this = this;
         return Rx_1.Observable
-            .interval(10000)
+            .interval(5000)
             .flatMap(function () {
             return _this.getData();
         });
@@ -29,10 +29,9 @@ var ParkingLotService = (function () {
         return this.http.get(this.dataUrl)
             .toPromise()
             .then(function (response) {
-            console.log(response.json());
-            var data = response.json().body;
+            var data = JSON.parse(response.json().body);
             data.sort(function (a, b) { return a.place_id - b.place_id; });
-            data;
+            return data;
         })
             .catch(this.handleError);
     };
