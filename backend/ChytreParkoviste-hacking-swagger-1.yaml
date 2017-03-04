@@ -1,0 +1,38 @@
+---
+swagger: "2.0"
+info:
+  version: "2017-03-04T20:49:57Z"
+  title: "ChytreParkoviste"
+host: "7j62gv0mfg.execute-api.eu-west-1.amazonaws.com"
+basePath: "/hacking"
+schemes:
+- "https"
+paths:
+  /place:
+    get:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+          headers:
+            Access-Control-Allow-Origin:
+              type: "string"
+    post:
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        200:
+          description: "200 response"
+          schema:
+            $ref: "#/definitions/Empty"
+definitions:
+  Empty:
+    type: "object"
+    title: "Empty Schema"
