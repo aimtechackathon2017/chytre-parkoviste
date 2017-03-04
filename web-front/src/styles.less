@@ -1,0 +1,97 @@
+@white: #fff;
+@grey: #aaa;
+@black: #222;
+
+@red: #c0171e;
+@green: #0f911f;
+
+body {
+    background-color: @black;
+    font-weight: 300;
+}
+
+h1 {
+    color: @white;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+
+.loading {
+    display: block;
+    margin: 100px auto;
+}
+
+.parking-places {
+    list-style: none;
+    text-align: center;
+
+    .parking-place {
+        display: inline-block;
+        width: 150px;
+        height: 250px;
+        margin: 10px;
+        border-radius: 3px;
+        background-color: @green;
+        box-shadow: inset 0 0 5px #000;
+
+        &.occupied {
+            background-color: darken(@red, 20%);
+
+            .parking-inside {
+                width: 80%;
+                height: 60%;
+                margin: 70px auto 0 auto;
+                background: url('car-roof.png') no-repeat 0 0;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+        .sign {
+            float: left;
+            width: 30px;
+            height: 30px;
+            margin: 15px;
+            background-color: @red;
+            border-radius: 100%;
+            box-shadow: 0 0 10px @black;
+            color: @white;
+            line-height: 30px;
+            text-align: center;
+        }
+        .status {
+            float: right;
+            margin: 19px 15px 0 0;
+            color: @white;
+        }
+    }
+}
+
+@media all and (max-width: 767px)
+{
+    h1 {
+        font-size: 26px;
+    }
+    .parking-places {
+        .parking-place {
+            width: 90px;
+            height: 150px;
+
+            .sign {
+                width: 20px;
+                height: 20px;
+                margin: 5px;
+                line-height: 20px;
+                font-size: 10px;
+            }
+            .status {
+                margin: 5px 5px 0 0;
+                font-size: 12px;
+            }
+            &.occupied {
+                .parking-inside {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
