@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">BluetoothScaner</string>
-    <string name="scan">Scan</string>
+    <string name="app_name">BluetoothScanner</string>
+    <string name="select_device">Select device</string>
+    <string name="none_found">None found</string>
 </resources>

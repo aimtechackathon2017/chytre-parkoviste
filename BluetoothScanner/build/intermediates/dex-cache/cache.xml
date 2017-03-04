@@ -3,129 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/7e27000e5c7017c6161f1c2f720fb06f8a0dbde0/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7113302c965566b66df46c6ca75ea301576114a5">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4e3414074edba45b58e1d546116ef696e2db7630/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/f1ed1ea79ecc2d86b12c94c8fabbb6e585e566a9/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_975beba359f6896bea7613dfc5dfb0dff791ea5a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/3f365f673f7768888808ab8dc81cbddaa01d8294/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3f8b24743999a37aadbc89f2797011406162ac48/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/841f65b79be72ca639d26728081dae97ffae5fab/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_44d9e4f377670cef7f0dc69831d75453b0af5608/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/2280488751ec91856d46815327488c34dc858c7a/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bbee8165918ea34a66adbf7cf004912cadcccec6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/4dc61d301e0fc97373147297081cdcffc8c26824/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_203b31d07314a6514b4981ce32262ca0331915d3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/e4df127e1cc9998f495e59c5d25d913eed29ae93/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2f9239ff2573a30342ce80b334699d09a9adc3e7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/b9c33459ccf797ab1351329a93ccce0bc142a1ed/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1db4c630ccbb3bfdcb7649a91fdd0c057ec46f09/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/Programs/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_8a1ef48cae4c9d553c5bafea68d0a951b8be18f6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/Programs/Android/Sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.1/constraint-layout-solver-1.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1ad79631209e77b0a2730fc112b4cc0c66a95132">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.1_d4c3fa344aebb7d5bc0b1673b5410be447573b09/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/c8ca8fbf912d4f39d587cd06590ecee0735e332d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_941d329caa997bbd76e93629aeb9d069d0acb65f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/.android/build-cache/911f206e2d540f03f073447525680b3a43702e9e/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_30a5744158ca39d2c0753cdde6c6e1949ad9ce80/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ff70fd993cf56d8794367833416ca9418455a27e">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_9b899814b83ef676b2a7b9167068030ca6b84a3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/home/dzejkob23/Documents/GIT/SmartParking/BluetoothScanner/BluetoothScaner/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_363089d727d9b4ef5ebda53d2012ff73d9ff793f/classes.dex" />
+        <dex dex="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_921227e415e0640b857c32e9f208c413c570654a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44d57bdd8d3bd41ff8327c075c9b31aef13f6ef5">
+        <dex dex="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f86d2fc43902532ddeaa39092cd2f88c4301b239/classes.dex" />
     </item>
 
 </items>
