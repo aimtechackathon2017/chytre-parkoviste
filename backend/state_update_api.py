@@ -23,12 +23,18 @@ def respond(err, res=None):
 
 def map_placemac_id(mac):
     response = placemac_map.get_item(Key={'mac': mac})
-    return int(response['Item']['place_id'])
+    if 'Item' in response:
+        return int(response['Item']['place_id'])
+    else:
+        return None
 
 
 def map_carmac_id(mac):
     response = carmac_map.get_item(Key={'mac': mac})
-    return int(response['Item']['car_id'])
+    if 'Item' in response:
+        return int(response['Item']['car_id'])
+    else:
+        return None
 
 
 def put_status(payload):
@@ -37,6 +43,9 @@ def put_status(payload):
         # obligatory arguments
         if 'place_mac' in store_status and 'available' in store_status:
             place_id = map_placemac_id(store_status['place_mac'])
+            if place_id == None:
+                return {'err': ValueError('Invalid place MAC "{}"'.format(store_status['place_mac'])), 'body': {'count': count}}
+            
             available = store_status['available']
             
             state_map = {
@@ -48,8 +57,11 @@ def put_status(payload):
 
             # optional arguments
             if 'car_mac' in store_status:
-                state_map['car_id'] = map_carmac_id(store_status['car_mac'])
-            
+                car_id = map_carmac_id(store_status['car_mac'])
+                if car_id == None:
+                    return {'err': ValueError('Invalid car MAC "{}"'.format(store_status['car_mac'])), 'body': {'count': count}}
+                state_map['car_id'] = car_id
+
             pa_state.put_item(Item=state_map)
             pa_cur_state.update_item(
                 Key={
@@ -61,12 +73,13 @@ def put_status(payload):
                 }
             )
             count = count + 1
-    return {'count': count}
+    return {'err': None, 'body': {'count': count}}
+
 
 
 def lambda_handler(event, context):
     if event['method'] == 'POST':
-        return respond(None, put_status(event['body']))
+        result = put_status(event['body'])
+        return respond(result['err'], result['body'])
     else:
         return respond(ValueError('Unsupported method "{}"'.format(operation)))
-
