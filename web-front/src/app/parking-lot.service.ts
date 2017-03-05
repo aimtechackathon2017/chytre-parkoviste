@@ -25,7 +25,9 @@ export class ParkingLotService {
             .then(response => {
                 let data = JSON.parse(response.json().body);
                 data.sort((a: any, b: any) => { return a.place_id - b.place_id; });
+                console.log(data);
                 return data as ParkingPlace[]
+                
                 }
             )
             .catch(this.handleError);

@@ -31,6 +31,7 @@ var ParkingLotService = (function () {
             .then(function (response) {
             var data = JSON.parse(response.json().body);
             data.sort(function (a, b) { return a.place_id - b.place_id; });
+            console.log(data);
             return data;
         })
             .catch(this.handleError);
