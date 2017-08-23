@@ -1,0 +1,17 @@
+carmac_map
+  mac : string PK
+  car_id : numeric
+
+placemac_map
+  mac : string PK
+  place_id : numeric
+
+pa_cur_state
+  place_id : numeric PK
+  available : bool
+
+pa_state
+  change_id : string PK
+  timestamp : numeric
+  available : bool
+  place_id : int

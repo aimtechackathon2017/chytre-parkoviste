@@ -46,7 +46,7 @@ def put_status(payload):
             if place_id == None:
                 return {'err': ValueError('Invalid place MAC "{}"'.format(store_status['place_mac'])), 'body': {'count': count}}
             
-            available = store_status['available']
+            available = bool(store_status['available'])
             
             state_map = {
                     'change_id': str(uuid.uuid4()),
@@ -74,7 +74,6 @@ def put_status(payload):
             )
             count = count + 1
     return {'err': None, 'body': {'count': count}}
-
 
 
 def lambda_handler(event, context):
