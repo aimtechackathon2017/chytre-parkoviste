@@ -1,0 +1,77 @@
+body {
+  background-color: #222;
+  font-weight: 300;
+}
+h1 {
+  color: #fff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.loading {
+  display: block;
+  margin: 100px auto;
+}
+.parking-places {
+  list-style: none;
+  text-align: center;
+}
+.parking-places .parking-place {
+  display: inline-block;
+  width: 150px;
+  height: 250px;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: #0f911f;
+  box-shadow: inset 0 0 5px #000;
+}
+.parking-places .parking-place.occupied {
+  background-color: #650c10;
+}
+.parking-places .parking-place.occupied .parking-inside {
+  width: 80%;
+  height: 60%;
+  margin: 70px auto 0 auto;
+  background: url('car-roof.png') no-repeat 0 0;
+  background-position: center;
+  background-size: contain;
+}
+.parking-places .parking-place .sign {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  background-color: #c0171e;
+  border-radius: 100%;
+  box-shadow: 0 0 10px #222;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+.parking-places .parking-place .status {
+  float: right;
+  margin: 19px 15px 0 0;
+  color: #fff;
+}
+@media all and (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+  }
+  .parking-places .parking-place {
+    width: 120px;
+    height: 200px;
+  }
+  .parking-places .parking-place .sign {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    line-height: 23px;
+    font-size: 10px;
+  }
+  .parking-places .parking-place .status {
+    margin: 10px 10px 0 0;
+    font-size: 12px;
+  }
+  .parking-places .parking-place.occupied .parking-inside {
+    margin-top: 50px;
+  }
+}

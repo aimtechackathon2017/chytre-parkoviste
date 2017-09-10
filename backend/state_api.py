@@ -31,10 +31,5 @@ def get_status():
 
 
 def lambda_handler(event, context):
-    # read ap_cur_state table and return it
-    operation = event['method']
-    if operation == 'GET':
-        return respond(None, get_status())
-    else:
-        return respond(ValueError('Unsupported method "{}"'.format(operation)))
+    return respond(None, get_status())
 

@@ -77,8 +77,5 @@ def put_status(payload):
 
 
 def lambda_handler(event, context):
-    if event['method'] == 'POST':
-        result = put_status(event['body'])
-        return respond(result['err'], result['body'])
-    else:
-        return respond(ValueError('Unsupported method "{}"'.format(operation)))
+    result = put_status(event)
+    return respond(result['err'], result['body'])
