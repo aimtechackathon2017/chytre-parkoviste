@@ -2,22 +2,130 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\cb7d1e6d8a8964b3553163aa6800695dacf4b241\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_921227e415e0640b857c32e9f208c413c570654a/classes.dex" />
+        sha1="7113302c965566b66df46c6ca75ea301576114a5">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_8f30d720cd149b0cef0b8dceadd5ce0d4fcb08e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\59962b515ece7e241fc8ef4153b4d30f27c0bed9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_dd4c7ae36e9ed63c8402256a28985b0303a9a40d.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="f2507433233ce15aedce349eeafc5e2511ef5db3">
-        <dex dex="/home/dzejkob23/Documents/GIT/chytre-parkoviste/BluetoothScanner/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_f86d2fc43902532ddeaa39092cd2f88c4301b239/classes.dex" />
+        sha1="72b5da8ce1294f0a3077e5a11bc41f2f6c8e255f">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a10b56eb162d2a8052fcd85be0f98c50e06de252\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Programy\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.1\constraint-layout-solver-1.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ad79631209e77b0a2730fc112b4cc0c66a95132">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.1_1f16c63680ba4b97b150f34f1808669df4113070.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\66bad6212ea6991c5237d93f3759b02a016bef09\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_44a12ce952fab4ecafe83879d04ea69160fa1273.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\efd73925f0aa4dd0950c3c05599c7b2db703dc16\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_332b6dabf9e3f4093cc5fff070ae5f0d1ee6d0b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\6655ad4925510393c660387cd6d3d32d4e94aa5c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_d74eac55708a32218fa41a709f5a98368d764d19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\8823f0b296789ba18f731f3e2ee9043231306d32\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_44302d980a5d6992d495379423e723b1e814c5ed.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_be392a776711a4031126152f0508ace85ade9a32\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\972efd0097fe54cd8847be46639fed6521780cfd\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_09d78abe161ddc32091f97a71eecb28b442d43bc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\e6eebf2483192ee4098a702b3451c4814c95e9f6\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_a55d350203b2726e4405dd5de0880e6052b7c837.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Programy\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\support-annotations-25.2.0_a7b3a8352fefdf3f6cea0c53e64ceb9a801d3e03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\37baddb5fd745e1c47ebe6c0b97b5537cfc2845a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_c5bfa820e8f795f8716575e44e3f0bbdb5c10382.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Manas\.android\build-cache\29f49f614b7c0bc250a4933c1506b40d2d60eeb7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="D:\Workspace\Git_repository\chytre-parkoviste\BluetoothScanner\app\build\intermediates\pre-dexed\debug\classes_4583a0d994caf765a67eaa23590527ff617d3261.jar" />
     </item>
 
 </items>

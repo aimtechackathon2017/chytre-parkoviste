@@ -1,16 +1,22 @@
 package com.example.aimtechackathon2017.bluetoothscanner;
 
+import android.Manifest;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
-import android.bluetooth.le.ScanFilter;
-import android.bluetooth.le.ScanSettings;
 import android.content.Context;
 import android.content.Intent;
+import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.wifi.WifiManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -23,7 +29,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.Semaphore;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -49,18 +54,7 @@ public class MainActivity extends AppCompatActivity
 
                 int intensity = -1;
                 String mac = device.getAddress().trim().replace(" ",":");
-/*
-                if (positions.containsKey(mac))
-                {
-                    intensity = scanRecord[scanRecord.length - 20];
 
-                    if (intensity > THRESHOLD)
-                        Log.d("TMP+", "intenzita: " + intensity);
-                    else
-                        Log.d("TMP-", "intenzita: " + intensity);
-
-                }
-*/
                 if(positions.containsKey(mac)) {
                     intensity = scanRecord[scanRecord.length - 20];
                     boolean value = isPositionEmpty(mac, intensity);
@@ -71,10 +65,12 @@ public class MainActivity extends AppCompatActivity
                         protected Object doInBackground(String... params) {
                             try
                             {
-                                URL url = new URL("https://7j62gv0mfg.execute-api.eu-west-1.amazonaws.com/hacking/place");
+                                URL url = new URL("https://i07qj1v6hk.execute-api.eu-central-1.amazonaws.com/prod/place");
                                 HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
                                 conn.setRequestMethod("POST");
                                 conn.setRequestProperty("Content-Type", "application/json");
+                                conn.setDoOutput(true);
+                                conn.setDoInput(true);
 
                                 JSONArray parent  = new JSONArray();
                                 JSONObject entity = new JSONObject();
@@ -87,13 +83,13 @@ public class MainActivity extends AppCompatActivity
 
                                 out.flush();
                                 out.close();
-                                InputStream is = conn.getInputStream();
+
+                                InputStream is = conn.getInputStream();//getErrorStream();
                                 byte [] array = new byte[1024];
 
                                 is.read(array);
-                                String a = new String(array);
+                                String result = new String(array);
                                 is.close();
-
                             }
                             catch (MalformedURLException e) {
                                 e.printStackTrace();
@@ -106,8 +102,6 @@ public class MainActivity extends AppCompatActivity
                             return null;
                         }
                     }.execute(Boolean.toString(value), mac);
-
-                    //task.execute(Boolean.toString(value), mac);
                 }
             }
         }
@@ -122,12 +116,30 @@ public class MainActivity extends AppCompatActivity
 
         config();
         initializePosition();
+    }
 
+    public void startScan(View v)
+    {
+        TextView myAwesomeTextView = (TextView)findViewById(R.id.activeTV);
+        myAwesomeTextView.setText(R.string.active);
 
+        if(bAdapter != null)
+            bAdapter.startLeScan(leScanCallback);
+    }
 
-        //bAdapter.getBluetoothLeScanner().startScan(new HackathonScanner());
-        bAdapter.startLeScan(leScanCallback);
-        //bAdapter.stopLeScan(leScanCallback);
+    public void stopScan(View v)
+    {
+        TextView myAwesomeTextView = (TextView)findViewById(R.id.activeTV);
+        myAwesomeTextView.setText(R.string.inactive);
+
+        if(bAdapter != null)
+            bAdapter.stopLeScan(leScanCallback);
+    }
+
+    @Override
+    public void onDestroy() {
+        stopScan(null);
+        super.onDestroy();
     }
 
     private void config()
@@ -139,14 +151,31 @@ public class MainActivity extends AppCompatActivity
             Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableIntent,REQUEST_ENABLE_BT);
         }
+
+        WifiManager wifiManager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+
+        if(wifiManager != null && !wifiManager.isWifiEnabled()){
+            WifiManager wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+            wifi.setWifiEnabled(true);
+        }
+
+        LocationManager lManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        if(lManager != null && !(lManager.isProviderEnabled(LocationManager.GPS_PROVIDER)
+                || lManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER))) {
+            startActivityForResult(new Intent(android.provider.Settings.ACTION_LOCATION_SOURCE_SETTINGS), 1);
+        }
+
+        ActivityCompat.requestPermissions(MainActivity.this,
+                new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                1);
     }
 
     private void initializePosition()
     {
         positions = new HashMap<String, Integer>();
-        positions.put("A0:E6:F8:EB:D9:AF",0);
-        positions.put("A0:E6:F8:EB:D8:CB",0);
-        positions.put("A0:E6:F8:EB:DC:35",0);
+        positions.put("A0:E6:F8:EB:DB:A6",0);
+        positions.put("A0:E6:F8:EB:DF:A3",0);
+        positions.put("A0:E6:F8:37:6A:34",0);
     }
 
     private boolean isPositionEmpty(String mac, int intesity)
@@ -172,4 +201,5 @@ public class MainActivity extends AppCompatActivity
 
         return i == COUNT_MIN;
     }
+
 }
